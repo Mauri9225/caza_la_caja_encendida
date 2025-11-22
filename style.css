@@ -1,0 +1,38 @@
+body {
+    font-family: Arial;
+    text-align: center;
+    margin: 20px;
+}
+
+#marcadores {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+#matriz {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    gap: 8px;
+    justify-content: center;
+}
+
+.celda {
+    width: 60px;
+    height: 60px;
+    border: 1px solid #777;
+    background: #eee;
+    transition: background 0.2s, transform 0.2s;
+    cursor: pointer;
+}
+
+.celda:hover {
+    transform: scale(1.05);
+}
+
+.lit {
+    background: gold !important;
+}
+
+.wrong {
+    background: red !important;
+}
